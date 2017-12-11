@@ -15,6 +15,6 @@ function circleCalculation(radius) {
 	} else {
 		alert('The area of a circle with an approximate radius of ' + Math.round(radius) + ' is approximately ' + Math.round(area) + ' and the circumference of the circle is approximately ' + Math.round(circumference) + '.');
 	}
-};
+}
 
 circleCalculation(radius);
