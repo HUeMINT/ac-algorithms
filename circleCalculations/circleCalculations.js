@@ -4,7 +4,17 @@
 
 //Bonus 2: Make both numbers whole integers (aka round to the nearest integer) 
 
-function circleCalculation () {
-	//your code here
+var radius = parseFloat(prompt('Please input a radius to begin.')); 
 
-circleCalculation(10);
+function circleCalculation(radius) {
+	var area = Math.PI * Math.pow(radius,2);
+	var circumference = 2 * Math.PI * radius;
+
+	if (Number.isInteger(radius) === true) {
+		alert('The area of a circle with a radius of ' + radius + ' is ' + area + ' and the circumference of the circle is ' + circumference + '.');
+	} else {
+		alert('The area of a circle with an approximate radius of ' + Math.round(radius) + ' is approximately ' + Math.round(area) + ' and the circumference of the circle is approximately ' + Math.round(circumference) + '.');
+	}
+};
+
+circleCalculation(radius);
