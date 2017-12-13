@@ -16,18 +16,15 @@
 			</ul>
 			<button id="lib-button">Lib it!</button>
 			<div id="story"></div> 
-			<!-- jQuery script tag -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script>
-				// click event
-				// function stores user's input values
-				// create sentence
-				// append to div
-				$('#lib-button').on('click',function(){
-					var noun = $('#noun').val();
-					var adjective = $('#adjective').val();
-					var person = $('#person').val();
-					$('#story').append("<p>" + person + " likes " + adjective + ' ' + noun + '</p>');
+				$('#lib-button').on('click', function(){
+					var madLib = {
+						noun: $('#noun').val(),
+						adjective: $('#adjective').val(),
+						person: $('#person').val()
+					};
+					$('#story').append('<p>' + madLib.person + ' really likes ' + madLib.adjective + ' ' + madLib.noun + '!</p>');
 				});
 			</script>
 	</body>
