@@ -1,6 +1,4 @@
-///**
 // * Created by yoneta on 3/23/16.
-// */
 
 //A zero-indexed array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index, and the last element of the array is also moved to the first place.
 //
@@ -14,6 +12,15 @@
 //
 //    For example, given array A = [3, 8, 9, 7, 6] and K = 3, the function should return [9, 7, 6, 3, 8].\
 
+var A = [3, 8, 9, 7, 6];
+var K = 3;
+
 function cyclicRotation(arr, rotation){
-    //Your code here...
+    for (var i = 0; i < rotation; i++){
+        var unshft = arr.pop();
+        arr.unshift(unshft);
+    }
+    console.log(arr);
 }
+
+cyclicRotation(A, K);
