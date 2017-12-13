@@ -1,23 +1,7 @@
 /*
 Given two numbers, a, b, as inputs, return true if a > b,
 return false if a < b, return 0 otherwise.
-*/
 
-function isBigger(a,b) {
-	if (a > b) {
-		return true;
-	} else if (a < b) {
-		return false;
-	} else if (a === b && typeof a === 'number' && typeof b === 'number') {
-		return 0;
-	// } else if (typeof a === 'undefined' || typeof b === 'undefined' || a !== isNaN || b !== isNaN) {
-	// 	return -1;
-	} else {
-		return -1;
-	}
-}
-
-/*
 Bonus 1: If a or b is undefined or not a number, then return -1.
 Hint: Chekout typeof() operator at
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
