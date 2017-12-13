@@ -11,7 +11,13 @@ If there are spaces in the input, do not include them in the result.
 Hint: Check out trim() method at
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
 */
-
+function alphabetSoup(str) {
+	var srt = str.split([("")]);
+	var jn = srt.sort();
+	var trm = jn.join('');
+	var result = trm.trim();
+	console.log(result);
+}
 /**
 Examples:
 
@@ -32,8 +38,3 @@ var result = alphabetSoup("my string oh my");
 console.log(result) // "ghimmnorstyy"
 
 **/
-
-function alphabetSoup(str) {
-	//Your code here
-	
-}
