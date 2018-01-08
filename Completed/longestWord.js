@@ -20,6 +20,12 @@
 
 
 function findLongestWord(str) {
-  //your code here
+  var array = str.split(" ");
+  var longestWordLength = 0;
+  for (var i = 0; i < array.length; i++) {
+    if (array[i].length >= longestWordLength) {
+      longestWordLength = array[i].length;
+    }
+  }
+  return longestWordLength;
 }
-
