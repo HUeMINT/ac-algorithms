@@ -8,7 +8,15 @@
 
 
 function sumFibonacci(num) {
-  //your code here
+  var Fibonacci = [1,1];
+  var sum = 1;
+  for (var i = 1; Fibonacci[i] <= num; i++) {
+    Fibonacci.push(Fibonacci[i]+Fibonacci[i-1]);
+    if (Fibonacci[i] % 2 === 1) {
+      sum += Fibonacci[i];
+    }
+  }
+  return sum;
 }
 
 
