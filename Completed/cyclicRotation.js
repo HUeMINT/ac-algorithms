@@ -20,7 +20,7 @@ function cyclicRotation(arr, rotation){
         var unshft = arr.pop();
         arr.unshift(unshft);
     }
-    console.log(arr);
+    return arr;
 }
 
 cyclicRotation(A, K);
